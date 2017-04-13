@@ -1,0 +1,26 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">Z-Tool</view>
+    <view class="page__desc">信息查询</view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-panel">
+      <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_small-appmsg">
+          <view wx:for="{{ queries }}" class="weui-cells weui-cells_in-small-appmsg">
+            <navigator url="{{ item.url }}" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+              <view class="weui-cell__hd">
+                <!--<image src="{{icon20}}" style="width: 20px;height: 20px;margin-right: 5px" />-->
+              </view>
+              <view class="weui-cell__bd weui-cell_primary">
+                <view>{{ item.title }}</view>
+              </view>
+              <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+    <include src="../footer.wxml"/>
+</view>

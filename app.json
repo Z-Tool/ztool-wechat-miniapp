@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/profile/profile",
+    "pages/about/about",
+    "pages/ip/ip",
+    "pages/dns/dns",
+    "pages/domain/domain"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#bbb",
+    "selectedColor": "#000",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "assets/icon/Home.png",
+      "selectedIconPath": "assets/icon/Home-Filled.png"
+    }, {
+      "pagePath": "pages/profile/profile",
+      "text": "个人信息",
+      "iconPath": "assets/icon/Contacts.png",
+      "selectedIconPath": "assets/icon/Contacts-Filled.png"
+    }, {
+      "pagePath": "pages/about/about",
+      "text": "关于Z-Tool",
+      "iconPath": "assets/icon/About.png",
+      "selectedIconPath": "assets/icon/About-Filled.png"
+    }]
+  },
+    "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}
