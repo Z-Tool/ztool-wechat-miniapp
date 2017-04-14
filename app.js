@@ -25,6 +25,7 @@ App({
     }
   },
   globalData:{
-    userInfo:null
+    userInfo:null,
+    serverAddr: 'https://vps.jack003.com:8443'
   }
 })

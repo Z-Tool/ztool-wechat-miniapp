@@ -6,3 +6,6 @@
 .log-item {
   margin: 10rpx;
 }
+.page__hd {
+  padding:20px;
+}

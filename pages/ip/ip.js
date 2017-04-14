@@ -1,7 +1,9 @@
+var app = getApp()
 Page({
     data: {
         inputShowed: false,
-        inputVal: ""
+        inputVal: "",
+        result: ""
     },
     showInput: function () {
         this.setData({
@@ -20,8 +22,21 @@ Page({
         });
     },
     inputTyping: function (e) {
-        this.setData({
+        var that = this;
+        that.setData({
             inputVal: e.detail.value
         });
+        wx.request({
+            url: app.globalData.serverAddr + '/api/v1.0/info?ip=' + that.data.inputVal,
+            header: {
+                'content-type': 'application/json'
+            },
+            success: function(res) {
+                console.log(res.data.data.ip_information)
+                that.setData({
+                    result: res.data.data.ip_information
+                })
+            }
+        })
     }
 })

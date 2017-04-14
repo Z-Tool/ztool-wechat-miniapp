@@ -1,13 +1,12 @@
 <view class="page">
-  <view class="page__hd">
-    <view class="page__title">Z-Tool</view>
-    <view class="page__desc">信息查询</view>
+  <view style="padding: 20px;">
+    <view class="page__desc">请选择需要查询的信息</view>
   </view>
   <view class="page__bd">
     <view class="weui-panel">
       <view class="weui-panel__bd">
         <view class="weui-media-box weui-media-box_small-appmsg">
-          <view wx:for="{{ queries }}" class="weui-cells weui-cells_in-small-appmsg">
+          <view wx:for="{{ queries }}" wx:key="*this" class="weui-cells weui-cells_in-small-appmsg">
             <navigator url="{{ item.url }}" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
               <view class="weui-cell__hd">
                 <!--<image src="{{icon20}}" style="width: 20px;height: 20px;margin-right: 5px" />-->

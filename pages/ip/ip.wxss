@@ -6,5 +6,8 @@
     display: none;
 }
 .weui-cell{
-    padding: 12px 15px 12px 35px;
+    padding:5px 25px;
+}
+.page__hd {
+    padding:20px;
 }
