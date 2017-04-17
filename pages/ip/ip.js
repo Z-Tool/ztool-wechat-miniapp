@@ -13,12 +13,14 @@ Page({
     hideInput: function () {
         this.setData({
             inputVal: "",
+            result: "",
             inputShowed: false
         });
     },
     clearInput: function () {
         this.setData({
-            inputVal: ""
+            inputVal: "",
+            result: ""
         });
     },
     inputTyping: function (e) {
