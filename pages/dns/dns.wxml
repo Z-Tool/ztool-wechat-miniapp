@@ -23,6 +23,14 @@
         </view>
       </navigator>
     </view>-->
+    <view class="weui-loadmore" wx:if="{{ loading }}">
+      <view class="weui-loading"></view>
+      <view class="weui-loadmore__tips">正在查询</view>
+    </view>
+    <view class="weui-loadmore" wx:if="{{ msg }}">
+      <!--<view class="weui-loading"></view>-->
+      <view>{{ msg }}</view>
+    </view>
     <view wx:if="{{result}}">
       <view class="weui-cells weui-cells_after-title">
         <view class="weui-cell">
